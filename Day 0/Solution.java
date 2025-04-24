@@ -1,18 +1,24 @@
-import java.io.*;
-import java.util.*;
 import java.util.Scanner;
 
 public class Solution {
-
   public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
+    int i = 4;
+    double d = 4.0;
+    String s = "HackerRank ";
 
-    String texto = scn.nextLine();
+    Scanner scan = new Scanner(System.in);
 
+    int intInput = scan.nextInt();
+    double doubleInput = scan.nextDouble();
+    scan.nextLine();
+    String stringInput = scan.nextLine();
 
-    scn.close();
+    System.out.println(i + intInput);
 
-    System.out.println("Hello, World.");
-    System.out.println(texto);
+    System.out.printf("%.1f\n", d + doubleInput);
+
+    System.out.println(s + stringInput);
+
+    scan.close();
   }
 }
